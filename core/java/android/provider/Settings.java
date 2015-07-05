@@ -3352,6 +3352,13 @@ public final class Settings {
          */
         public static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
+         /**
+         * Sub-option of battery inside the icon
+         * Hide the battery percentage only when battery level is beyond config_LowBatteryWarningLevel (default: 15)
+         * @hide
+         */
+        public static final String STATUS_BAR_SHOW_BATTERY_PERCENT_LOW_ONLY = "status_bar_show_battery_percent_low_only";
+
         /**
          * Show or hide clock
          * 0 - hide
@@ -3456,7 +3463,8 @@ public final class Settings {
             NOTIFICATION_SOUND,
             WIFI_AUTO_CONNECT_TYPE,
             STATUS_BAR_BATTERY_STYLE,
-            STATUS_BAR_SHOW_BATTERY_PERCENT
+            STATUS_BAR_SHOW_BATTERY_PERCENT,
+	    STATUS_BAR_SHOW_BATTERY_PERCENT_LOW_ONLY
         };
 
         /**
